@@ -13,6 +13,7 @@ pipeline {
                 '''
             }
         }
+
         stage('Test') {
             steps {
                 echo 'Running tests...'
@@ -22,6 +23,7 @@ pipeline {
                 '''
             }
         }
+
         stage('Deploy') {
             steps {
                 echo 'Deploying application...'
@@ -31,6 +33,7 @@ pipeline {
                 '''
             }
         }
+
         stage('Run Application') {
             steps {
                 echo 'Running application...'
@@ -41,6 +44,7 @@ pipeline {
                 '''
             }
         }
+
         stage('Test Application') {
             steps {
                 echo 'Testing application...'
